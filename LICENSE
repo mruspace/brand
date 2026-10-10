@@ -1,0 +1,12 @@
+Copyright (c) 2026 Binns Pte. Ltd. All rights reserved.
+
+The Mru name, the Mru mark, the lockup and the animations in this repository
+are trademarks and artwork of Binns Pte. Ltd. They are not licensed under an
+open-source license. You can use them as TRADEMARK.md describes: to refer to
+Mru honestly, without suggesting that we endorse your work.
+
+Exceptions:
+
+- fonts/jost-500.ttf is Jost by Indestructible Type, under the SIL Open Font
+  License 1.1 (fonts/OFL-jost.txt).
+- scripts/ is code you can reuse under the Apache License 2.0.

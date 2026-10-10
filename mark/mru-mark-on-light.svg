@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="400" height="400" role="img" aria-label="Mru mark">
+  <circle cx="50" cy="50" r="34" fill="none" stroke="#16161a" stroke-width="2.4"/>
+  <ellipse cx="50" cy="50" rx="30" ry="14" fill="none" stroke="#16161a" stroke-width="1.4" transform="rotate(-22 50 50)"/>
+  <path fill="#16161a" d="M45.816 55.600L46.584 48.784L49.992 54.560L53.416 48.784L54.184 55.600L56.136 55.600L54.600 43.840L49.992 51.440L45.400 43.840L43.864 55.600L45.816 55.600Z"/>
+</svg>
