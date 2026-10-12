@@ -12,8 +12,8 @@ identify our own work and avoid confusion about its source.
 
 ## This repository
 
-The artwork in this repository (the mark, the lockup and the animations) is
-not under an open-source license. See [LICENSE](./LICENSE). The scripts are
+The artwork in this repository (the mark, the lockup, the wordmarks and the
+animations) is not under an open-source license. See [LICENSE](./LICENSE). The scripts are
 under the Apache License 2.0, and the font is under the SIL Open Font License.
 Neither license grants any rights to our trademarks. This notice governs the
 marks.
@@ -26,7 +26,7 @@ example to:
 - State that your work uses, integrates with, is compatible with, or is based on
   Mru or the Mru source code.
 - Link to [mru.space](https://mru.space) or to this repository.
-- Show the unmodified mark or lockup next to such a reference.
+- Show the unmodified mark, lockup or wordmark next to such a reference.
 - Discuss, review, teach, or report on the project.
 
 When you do, please use the marks accurately and don't imply that we sponsor,
