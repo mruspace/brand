@@ -1,5 +1,5 @@
-// Builds the mark and lockup SVGs with every letter as an outline, so they
-// look the same without the font installed. Geometry matches the site's mark
+// Builds the mark, lockup and wordmark SVGs with every letter as an outline,
+// so they look the same without the font installed. Geometry matches the site's mark
 // (mruspace/website, src/components/MarkSvg.astro): a 100-unit box, ring r34,
 // orbit 30 x 14 at -22 degrees, an M set in Jost 500 at 16 units.
 // Run `npm run build`, then `scripts/png.sh` for the PNGs.
@@ -58,4 +58,22 @@ for (const [name, ink] of [
     svg([r(edge), r(edge), lockW, lockH], `${markBody(ink)}\n  <path fill="${ink}" d="${wordPath}"/>`, 'Mru'),
   );
 }
-console.log(`mark and lockup written (lockup ${lockW} x ${lockH}, word ${r(width)} wide)`);
+// The wordmarks: the brand and the product names alone, at the lockup's type
+// size, trimmed to the letters.
+const WORDS = ['Mru', 'Mru Aerospace', 'Mru Field', 'Mru Flight'];
+for (const text of WORDS) {
+  const slug = text.toLowerCase().replace(/ /g, '-');
+  const path = font.getPath(text, 0, 0, size);
+  const b = path.getBoundingBox();
+  const box = [r(b.x1), r(b.y1), r(b.x2 - b.x1), r(b.y2 - b.y1)];
+  for (const [name, ink] of [
+    ['light', colors.light.ink],
+    ['dark', colors.dark.ink],
+  ]) {
+    writeFileSync(
+      new URL(`../wordmark/${slug}-wordmark-on-${name}.svg`, import.meta.url),
+      svg(box, `\n  <path fill="${ink}" d="${path.toPathData(3)}"/>`, text),
+    );
+  }
+}
+console.log(`mark, lockup and ${WORDS.length} wordmarks written (lockup ${lockW} x ${lockH}, word ${r(width)} wide)`);

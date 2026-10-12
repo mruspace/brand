@@ -1,6 +1,6 @@
 # Mru brand kit
 
-The Mru mark, the lockup, the colors and the animated mark. The guide with
+The Mru mark, the lockup, the wordmarks, the colors and the animated mark. The guide with
 previews is at [mru.space/brand](https://mru.space/brand/).
 
 Download everything: [main.zip](https://github.com/mruspace/brand/archive/refs/heads/main.zip).
@@ -11,6 +11,7 @@ Download everything: [main.zip](https://github.com/mruspace/brand/archive/refs/h
 | --- | --- |
 | `mark/` | The mark as SVG, and PNG at 512 and 1024 px. `on-light` has dark ink for light backgrounds; `on-dark` has light ink for dark backgrounds. Transparent. |
 | `lockup/` | The mark with the word "Mru", as SVG and PNG. Same two versions. |
+| `wordmark/` | The names alone, with no mark: "Mru", "Mru Aerospace", "Mru Field" and "Mru Flight". SVG and PNG, same two versions. |
 | `motion/` | The animated mark, as GIF and MP4. `mru` is for dark backgrounds, `mru-light` for light ones. |
 | `colors.json` | The site colors for light and dark mode. |
 
@@ -27,7 +28,7 @@ Every letter in the SVGs is an outline, so they look the same without the font.
 
 ## Type
 
-- Headings and the word "Mru": Futura, medium. Jost 500 is the open fallback.
+- Headings, the word "Mru" and the wordmarks: Futura, medium. Jost 500 is the open fallback.
 - Body text: Charter. Source Serif 4 is the open fallback.
 - Labels, numbers and code: IBM Plex Mono.
 
@@ -35,6 +36,9 @@ Every letter in the SVGs is an outline, so they look the same without the font.
 
 - Keep clear space around the mark of at least half the ring's diameter.
 - Use the mark at 16 px or larger, and the lockup at 24 px tall or larger.
+- Use the "Mru" wordmark where the mark cannot go. Use "Mru Aerospace" for
+  the company, for example in a document or a listing. Use "Mru Field" and
+  "Mru Flight" for the products.
 - Use the files as they are. Do not recolor, rotate, stretch, outline or add
   effects to the mark, and do not set "Mru" in another typeface.
 - Use ink on paper: the `on-light` files on light backgrounds and the
