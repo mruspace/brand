@@ -2,7 +2,7 @@
   "name": "mru-brand",
   "private": true,
   "type": "module",
-  "description": "Mru brand kit: the mark, the lockup, colors and motion",
+  "description": "Mru brand kit: the mark, the lockup, the wordmarks, colors and motion",
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
     "build": "node scripts/build.mjs"
