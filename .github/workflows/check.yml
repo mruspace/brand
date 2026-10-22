@@ -1,0 +1,25 @@
+name: Check
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  # A new push to a pull request cancels the run for the old commit.
+  group: check-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  svg:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      # The committed SVGs must be what the build writes. Run `npm run build`
+      # and commit the result if this fails.
+      - run: git diff --exit-code
