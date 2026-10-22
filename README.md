@@ -44,7 +44,7 @@ Every letter in the SVGs is an outline, so they look the same without the font.
 - Use ink on paper: the `on-light` files on light backgrounds and the
   `on-dark` files on dark ones.
 
-The name and the mark are trademarks of Binns Pte. Ltd. Read
+The name and the mark are trademarks of Mru Aerospace, Inc. Read
 [TRADEMARK.md](TRADEMARK.md) before you use them. Questions:
 [contact@mru.space](mailto:contact@mru.space).
 
